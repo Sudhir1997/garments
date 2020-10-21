@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import Carousel from './../carosel/carousel.jsx';
 
 export default class Main extends React.Component{
+  state={val:12}
    handlerSearch(event){
       console.log(event.target.value)
     }
@@ -21,7 +22,7 @@ export default class Main extends React.Component{
          <input className={`form-control ${styles.searchwidth}`} type="search" placeholder="Vendor Search" onChange={this.handlerSearch.bind(this)} aria-label="Search" />
          </div>
          <div className={`${styles.gridcontainer}`}>
-         <VendorCard />
+         <VendorCard val={this.state.val} />
          <VendorCard />
          <VendorCard />
          <VendorCard />

@@ -7,52 +7,68 @@
 .mobileh6{
   display: inline-block;
 }
-h6{
-  font-size:1.1vw;
-}
-.spantext{
-  font-size: 1vw;
-}
 
 
-@media only screen and (max-width: 320px) {
-  .cardswidth{
-    width:99vw !important;
-  }
-}
-
-@media only screen and (max-width: 375px) {
+/* Mobile Portrait */
+@media only screen and (min-width: 320px) {
   .cardswidth{
     width:90vw !important;
-    
   }
+  .h6{
+  font-size:15px !important;
 }
-@media only screen and (min-width: 425px) {
+.spantext{
+  font-size:12px;
+}
+}
+/* Mobile Landscape */
+@media only screen and (min-width: 568px) {
   .cardswidth{
-    width:95vw !important;
+    width:96vw !important;
   }
+  .h6{
+    font-size:80px;
 }
-@media only screen and (min-width:768px) {
- .cardswidth{
-    width:45vw !important;
-    
-  }
+.spantext{
+  font-size:15px;
+}
+}
 
+/* Tablet Portrait */
+@media only screen and (min-width: 768px) {
+  .cardswidth{
+    width:96vw !important;
+  }
+  .h6{
+    font-size:80px;
 }
+.spantext{
+  font-size:15px;
+}
+}
+
+/* Tablet Landscape */
 @media only screen and (min-width: 1024px) {
   .cardswidth{
-    width:30vw !important; 
+    width:47vw !important;
   }
-
+  .h6{
+    font-size:80px;
 }
-@media only screen and (min-width: 1440px) {
+.spantext{
+  font-size:15px;
+}
+}
+
+/* Laptop and Large Screen */
+@media only screen and (min-width: 1366px) {
   .cardswidth{
-    width:20vw !important;
+    width:22vw !important;
   }
+  .h6{
+    font-size:80px;
 }
-
-@media only screen and (min-width: 2560px) {
-.cardswidth{
-    width:17vw !important;
-  }
+.spantext{
+  font-size:15px;
+}
 }
